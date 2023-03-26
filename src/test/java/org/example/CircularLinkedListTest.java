@@ -1,5 +1,6 @@
 package org.example;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -39,6 +40,52 @@ public class CircularLinkedListTest {
         assertFalse(len);
     }
 
+    @Test
+    public void getTest() throws Exception {
+        linkedList.append('a');
+        linkedList.append('b');
+        linkedList.append('c');
+        linkedList.append('d');
+        linkedList.append('e');
+        char expected = linkedList.get(2);
+        assertEquals('c', expected);
+    }
+
+    @Test
+    public void insertTest() throws Exception {
+        linkedList.append('a');
+        linkedList.append('b');
+        linkedList.append('c');
+        linkedList.append('d');
+        linkedList.append('e');
+        linkedList.insert('q', 2);
+        char expected = 'q';
+        assertEquals(expected, linkedList.get(3).charValue());
+    }
+
+    @Test
+    public void deleteTest() throws Exception{
+        linkedList.append('a');
+        linkedList.append('b');
+        linkedList.append('c');
+        linkedList.append('d');
+        linkedList.append('e');
+        char expected = 'c';
+        assertEquals(expected, linkedList.delete(2).charValue());
+
+    }
+
+    @Test
+    public void deleteBeginningTest() throws Exception{
+        linkedList.append('a');
+        linkedList.append('b');
+        linkedList.append('c');
+        linkedList.append('d');
+        linkedList.append('e');
+        char expected = 'a';
+        assertEquals(expected, linkedList.delete(0).charValue());
+
+    };
 
 
 }

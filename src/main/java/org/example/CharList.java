@@ -8,4 +8,8 @@ public interface CharList {
 
     void insert(Character element, int position) throws Exception;
 
+    Character get(int position) throws Exception;
+
+    Character delete(int position) throws Exception;
+
 }

@@ -67,6 +67,37 @@ public class CircularLinkedList implements CharList{
         }
     }
 
-
-
+    @Override
+    public Character get(int position) throws Exception{
+        if(position < 0 || position >= length){ throw new Exception("Error. Invalid position.");}
+        Node current = head;
+        for(int i = 0; i < position; i++){
+            current = current.next;
+        }
+        return current.data;
+    }
+    
+    @Override
+    public Character delete(int position) throws Exception{
+        if(position < 0 || position >= length){ throw new Exception("Error. Invalid position.");}
+        char delel = ' ';
+        if(position == 0){
+            delel = head.data;
+            Node current = head;
+            while(current.next != head){
+                current = current.next;
+            }
+            current.next = head.next;
+            head = head.next;
+        }else{
+            Node current = head;
+            for(int i =0; i < (position - 1); i++){
+                current = current.next;
+            }
+            delel = current.next.data;
+            current.next = current.next.next;
+        }
+        length--;
+        return delel;
+    }
 }
