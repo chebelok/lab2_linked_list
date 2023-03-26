@@ -14,7 +14,6 @@ public class CircularLinkedListTest {
 
     }
 
-
     @Test
     public void lengthTest(){
         int expected = 0;

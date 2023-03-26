@@ -6,4 +6,6 @@ public interface CharList {
 
     void append(Character element);
 
+    void insert(Character element, int position) throws Exception;
+
 }
