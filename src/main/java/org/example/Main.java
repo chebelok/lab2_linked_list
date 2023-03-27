@@ -27,6 +27,9 @@ public class Main {
         System.out.println(linkedList.delete(0));
         System.out.println(linkedList.get(0));
         linkedList.display();
+        linkedList.clear();
+        linkedList.display();
+        System.out.println(linkedList.Length());
         System.out.println("Hello world!");
     }
 }

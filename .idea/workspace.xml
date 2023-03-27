@@ -60,7 +60,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CircularLinkedListTest.deleteBeginningTest">
+  <component name="RunManager" selected="JUnit.CircularLinkedListTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="lab2_linked_list" />
@@ -70,6 +70,37 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CircularLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2_linked_list" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CircularLinkedListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CircularLinkedListTest.clearTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2_linked_list" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CircularLinkedListTest" />
+      <option name="METHOD_NAME" value="clearTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,45 +137,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CircularLinkedListTest.getTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab2_linked_list" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.CircularLinkedListTest" />
-      <option name="METHOD_NAME" value="getTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircularLinkedListTest.insertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab2_linked_list" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.CircularLinkedListTest" />
-      <option name="METHOD_NAME" value="insertTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CircularLinkedListTest" />
+        <item itemvalue="JUnit.CircularLinkedListTest.clearTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CircularLinkedListTest.deleteBeginningTest" />
         <item itemvalue="JUnit.CircularLinkedListTest.deleteTest" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.CircularLinkedListTest.insertTest" />
-        <item itemvalue="JUnit.CircularLinkedListTest.getTest" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +162,7 @@
       <workItem from="1679694194537" duration="27000" />
       <workItem from="1679694316795" duration="374000" />
       <workItem from="1679694720033" duration="913000" />
-      <workItem from="1679695658513" duration="29398000" />
+      <workItem from="1679695658513" duration="32805000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1679410089979</created>
@@ -200,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679846984438</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added get and delete methods and tests for them">
+      <created>1679870786021</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679870786021</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +229,7 @@
     <MESSAGE value="added first methods, unit tests to them and usage example to main class" />
     <MESSAGE value="remove optional thing in gh workflow" />
     <MESSAGE value="remake append method, added insert and display methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="remake append method, added insert and display methods" />
+    <MESSAGE value="added get and delete methods and tests for them" />
+    <option name="LAST_COMMIT_MESSAGE" value="added get and delete methods and tests for them" />
   </component>
 </project>

@@ -100,4 +100,11 @@ public class CircularLinkedList implements CharList{
         length--;
         return delel;
     }
+
+    @Override
+    public void clear(){
+        head = null;
+        length = 0;
+    }
+
 }

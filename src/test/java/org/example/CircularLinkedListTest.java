@@ -1,6 +1,5 @@
 package org.example;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,7 +11,6 @@ public class CircularLinkedListTest {
     @Before
     public void setUpSettings(){
         linkedList = new CircularLinkedList();
-
     }
 
     @Test
@@ -72,7 +70,6 @@ public class CircularLinkedListTest {
         linkedList.append('e');
         char expected = 'c';
         assertEquals(expected, linkedList.delete(2).charValue());
-
     }
 
     @Test
@@ -84,8 +81,19 @@ public class CircularLinkedListTest {
         linkedList.append('e');
         char expected = 'a';
         assertEquals(expected, linkedList.delete(0).charValue());
+    }
 
-    };
+    @Test
+    public void clearTest(){
+        linkedList.append('a');
+        linkedList.append('b');
+        linkedList.append('c');
+        linkedList.append('d');
+        linkedList.append('e');
+        linkedList.clear();
+        int expLenght = 0;
+        assertEquals(expLenght, linkedList.Length());
+    }
 
 
 }

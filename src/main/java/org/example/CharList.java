@@ -12,4 +12,7 @@ public interface CharList {
 
     Character delete(int position) throws Exception;
 
+    void clear();
+
+
 }
