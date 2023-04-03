@@ -76,7 +76,7 @@ public class CircularLinkedList implements CharList{
         }
         return current.data;
     }
-    
+
     @Override
     public Character delete(int position) throws Exception{
         if(position < 0 || position >= length){ throw new Exception("Error. Invalid position.");}
@@ -105,6 +105,81 @@ public class CircularLinkedList implements CharList{
     public void clear(){
         head = null;
         length = 0;
+    }
+
+    @Override
+    public void deleteAll(Character element) {
+        if (head == null) {
+            return;
+        }
+        while (head.data == element) {
+            if (head.next == head) {
+                head = null;
+            } else {
+                head = head.next;
+            }
+        }
+        Node previous = head;
+        Node current = head.next;
+
+        while (current != head) {
+            if (current.data == element) {
+                previous.next = current.next;
+                length--;
+            }
+            previous = current;
+            current = current.next;
+        }
+    }
+
+    @Override
+    public int findFirst(Character element){
+        if(head == null){
+            return -1;
+        }
+        Node current = head;
+        int tmp = 0;
+        while(current.next != head){
+            if(current.data == element){
+                return tmp;
+            }
+            tmp++;
+            current = current.next;
+        }
+        return -1;
+    }
+
+    @Override
+    public int findLast(Character element){
+        if(head == null){
+            return -1;
+        }
+            int last = -1;
+            int index = 0;
+            Node current = head;
+            while (current.next != head) {
+                if (current.data == element){
+                    last = index;
+                }
+                index++;
+                current = current.next;
+            }
+            return last;
+    }
+
+    @Override
+    public CircularLinkedList clone(){
+        CircularLinkedList newLinkedList = new CircularLinkedList();
+        if(head==null){
+            return newLinkedList;
+        }
+        Node current = head;
+        for (int i = 0; i < length; i++){
+            newLinkedList.append(current.data);
+            current = current.next;
+        }
+
+        return newLinkedList;
     }
 
 }

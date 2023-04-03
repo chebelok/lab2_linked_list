@@ -60,7 +60,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CircularLinkedListTest">
+  <component name="RunManager" selected="JUnit.CircularLinkedListTest.testClone">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="lab2_linked_list" />
@@ -74,7 +74,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CircularLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CircularLinkedListTest.deleteAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab2_linked_list" />
       <extension name="coverage">
         <pattern>
@@ -84,28 +84,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.CircularLinkedListTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircularLinkedListTest.clearTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab2_linked_list" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.CircularLinkedListTest" />
-      <option name="METHOD_NAME" value="clearTest" />
+      <option name="METHOD_NAME" value="deleteAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CircularLinkedListTest.deleteBeginningTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CircularLinkedListTest.findFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab2_linked_list" />
       <extension name="coverage">
         <pattern>
@@ -115,13 +100,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.CircularLinkedListTest" />
-      <option name="METHOD_NAME" value="deleteBeginningTest" />
+      <option name="METHOD_NAME" value="findFirstTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CircularLinkedListTest.deleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CircularLinkedListTest.findLastTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab2_linked_list" />
       <extension name="coverage">
         <pattern>
@@ -131,7 +116,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.CircularLinkedListTest" />
-      <option name="METHOD_NAME" value="deleteTest" />
+      <option name="METHOD_NAME" value="findLastTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CircularLinkedListTest.testClone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2_linked_list" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CircularLinkedListTest" />
+      <option name="METHOD_NAME" value="testClone" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CircularLinkedListTest" />
-        <item itemvalue="JUnit.CircularLinkedListTest.clearTest" />
+        <item itemvalue="JUnit.CircularLinkedListTest.testClone" />
+        <item itemvalue="JUnit.CircularLinkedListTest.findLastTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.CircularLinkedListTest.deleteBeginningTest" />
-        <item itemvalue="JUnit.CircularLinkedListTest.deleteTest" />
+        <item itemvalue="JUnit.CircularLinkedListTest.findFirstTest" />
+        <item itemvalue="JUnit.CircularLinkedListTest.deleteAll" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +163,7 @@
       <workItem from="1679694194537" duration="27000" />
       <workItem from="1679694316795" duration="374000" />
       <workItem from="1679694720033" duration="913000" />
-      <workItem from="1679695658513" duration="32805000" />
+      <workItem from="1679695658513" duration="52602000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1679410089979</created>
@@ -206,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679870786021</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added clear method and test for it">
+      <created>1679947762032</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679947762032</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +238,7 @@
     <MESSAGE value="remove optional thing in gh workflow" />
     <MESSAGE value="remake append method, added insert and display methods" />
     <MESSAGE value="added get and delete methods and tests for them" />
-    <option name="LAST_COMMIT_MESSAGE" value="added get and delete methods and tests for them" />
+    <MESSAGE value="added clear method and test for it" />
+    <option name="LAST_COMMIT_MESSAGE" value="added clear method and test for it" />
   </component>
 </project>

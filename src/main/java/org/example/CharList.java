@@ -14,5 +14,14 @@ public interface CharList {
 
     void clear();
 
+    void deleteAll(Character element);
+
+    int findFirst(Character element);
+
+    int findLast(Character element);
+
+    CircularLinkedList clone();
+
+
 
 }

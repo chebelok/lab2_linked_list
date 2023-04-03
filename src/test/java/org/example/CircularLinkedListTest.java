@@ -91,8 +91,63 @@ public class CircularLinkedListTest {
         linkedList.append('d');
         linkedList.append('e');
         linkedList.clear();
-        int expLenght = 0;
-        assertEquals(expLenght, linkedList.Length());
+        int expLength = 0;
+        assertEquals(expLength, linkedList.Length());
+    }
+
+    @Test
+    public void deleteAll() throws Exception {
+        linkedList.append('b');
+        linkedList.append('a');
+        linkedList.append('c');
+        linkedList.append('d');
+        linkedList.append('a');
+        linkedList.append('g');
+        assertEquals('g', linkedList.get(5).charValue());
+        linkedList.deleteAll('a');
+        assertEquals(4, linkedList.Length());
+        assertEquals('c', linkedList.get(1).charValue());
+        assertEquals('g', linkedList.get(3).charValue());
+        assertEquals('d', linkedList.get(2).charValue());
+    }
+
+    @Test
+    public void findFirstTest(){
+        linkedList.append('b');
+        linkedList.append('a');
+        linkedList.append('c');
+        linkedList.append('d');
+        linkedList.append('a');
+        linkedList.append('g');
+        assertEquals(1, linkedList.findFirst('a'));
+    }
+
+    @Test
+    public void findLastTest(){
+        linkedList.append('b');
+        linkedList.append('a');
+        linkedList.append('c');
+        linkedList.append('a');
+        linkedList.append('g');
+        linkedList.append('a');
+        linkedList.append('h');
+        assertEquals(5, linkedList.findLast('a'));
+    }
+
+    @Test
+    public void testClone() throws Exception {
+        linkedList.append('b');
+        linkedList.append('a');
+        linkedList.append('c');
+        linkedList.append('a');
+        linkedList.append('g');
+        linkedList.append('a');
+        linkedList.append('h');
+        CircularLinkedList newList = linkedList.clone();
+        assertEquals('a', newList.get(1).charValue());
+        assertEquals('g', newList.get(4).charValue());
+        assertEquals('h', newList.get(6).charValue());
+        assertEquals(7, newList.Length());
     }
 
 
