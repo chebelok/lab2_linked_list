@@ -22,6 +22,7 @@ public interface CharList {
 
     CircularLinkedList clone();
 
+    void extend(CircularLinkedList list) throws Exception;
 
-
+    void reverse();
 }

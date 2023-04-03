@@ -135,7 +135,7 @@ public class CircularLinkedListTest {
     }
 
     @Test
-    public void testClone() throws Exception {
+    public void cloneTest() throws Exception {
         linkedList.append('b');
         linkedList.append('a');
         linkedList.append('c');
@@ -148,6 +148,36 @@ public class CircularLinkedListTest {
         assertEquals('g', newList.get(4).charValue());
         assertEquals('h', newList.get(6).charValue());
         assertEquals(7, newList.Length());
+    }
+
+    @Test
+    public void extendTest() throws Exception{
+        linkedList.append('b');
+        linkedList.append('a');
+        linkedList.append('c');
+        linkedList.append('a');
+        CircularLinkedList list = new CircularLinkedList();
+        list.append('w');
+        list.append('x');
+        list.append('p');
+        linkedList.extend(list);
+        assertEquals('x', linkedList.get(5).charValue());
+        assertEquals(7, linkedList.Length());
+
+
+    }
+
+    @Test
+    public void reverseTest() throws Exception {
+        linkedList.append('b');
+        linkedList.append('a');
+        linkedList.append('c');
+        linkedList.append('a');
+        linkedList.append('g');
+        linkedList.append('a');
+        linkedList.append('h');
+        linkedList.reverse();
+        assertEquals('h', linkedList.get(0).charValue());
     }
 
 

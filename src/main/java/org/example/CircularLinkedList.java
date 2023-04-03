@@ -182,4 +182,34 @@ public class CircularLinkedList implements CharList{
         return newLinkedList;
     }
 
+    @Override
+    public void extend(CircularLinkedList list) throws Exception {
+        for(int i =0; i < list.Length(); i++){
+            append(list.get(i));
+        }
+    }
+
+    @Override
+    public void reverse(){
+        Node previous = null;
+        Node current = head;
+        Node next = null;
+//        while (current != head) {
+//            next = current.next;
+//            current.next = previous;
+//            previous = current;
+//            current = next;
+//        }
+//        head = previous;
+//        current.next = head;
+        while(current != head){
+            next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+        head = current;
+        head.next = previous;
+    }
+
 }
