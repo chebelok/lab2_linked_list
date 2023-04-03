@@ -194,15 +194,7 @@ public class CircularLinkedList implements CharList{
         Node previous = null;
         Node current = head;
         Node next = null;
-//        while (current != head) {
-//            next = current.next;
-//            current.next = previous;
-//            previous = current;
-//            current = next;
-//        }
-//        head = previous;
-//        current.next = head;
-        while(current != head){
+        while(current.next != head){
             next = current.next;
             current.next = previous;
             previous = current;
