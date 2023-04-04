@@ -58,7 +58,7 @@ public class CircularLinkedListTest {
         linkedList.append('e');
         linkedList.insert('q', 2);
         char expected = 'q';
-        assertEquals(expected, linkedList.get(3).charValue());
+        assertEquals(expected, linkedList.get(2).charValue());
     }
 
     @Test
