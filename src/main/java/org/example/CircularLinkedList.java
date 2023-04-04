@@ -78,6 +78,9 @@ public class CircularLinkedList implements CharList{
 //            }while(current != head);
 //            System.out.println();
 //        }
+        for(Character element : list){
+            System.out.printf(" " + element);
+        }
     }
 
     @Override
