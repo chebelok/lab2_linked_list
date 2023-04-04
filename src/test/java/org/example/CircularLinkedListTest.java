@@ -34,7 +34,7 @@ public class CircularLinkedListTest {
     public void appendTest(){
         linkedList.append('a');
         linkedList.append('b');
-        boolean len = linkedList.length == 0;
+        boolean len = linkedList.Length() == 0;
         assertFalse(len);
     }
 

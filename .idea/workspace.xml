@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="008a7b66-c82e-41af-a9d5-1ccf7bec91fb" name="Changes" comment="">
+    <list default="true" id="008a7b66-c82e-41af-a9d5-1ccf7bec91fb" name="Changes" comment="fixed problem with ci and test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CharList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CharList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CircularLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CircularLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/CircularLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/CircularLinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +57,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CircularLinkedListTest.reverseTest">
+  <component name="RunManager" selected="JUnit.CircularLinkedListTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="lab2_linked_list" />
@@ -73,7 +71,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CircularLinkedListTest.findLastTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CircularLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab2_linked_list" />
       <extension name="coverage">
         <pattern>
@@ -83,8 +81,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.CircularLinkedListTest" />
-      <option name="METHOD_NAME" value="findLastTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CircularLinkedListTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CircularLinkedListTest.reverseTest" />
         <item itemvalue="JUnit.CircularLinkedListTest.testExtend" />
         <item itemvalue="JUnit.CircularLinkedListTest.testClone" />
-        <item itemvalue="JUnit.CircularLinkedListTest.findLastTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +159,7 @@
       <workItem from="1679694194537" duration="27000" />
       <workItem from="1679694316795" duration="374000" />
       <workItem from="1679694720033" duration="913000" />
-      <workItem from="1679695658513" duration="55524000" />
+      <workItem from="1679695658513" duration="60819000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1679410089979</created>
@@ -220,7 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680556050181</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added reverse and extend methods and tests for them">
+      <created>1680558983403</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680558983403</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fixed problem with ci and test">
+      <created>1680559111488</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680559111488</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,17 +257,8 @@
     <MESSAGE value="added get and delete methods and tests for them" />
     <MESSAGE value="added clear method and test for it" />
     <MESSAGE value="added findFirst/last deleteAll, clone methods and tests for them" />
-    <option name="LAST_COMMIT_MESSAGE" value="added findFirst/last deleteAll, clone methods and tests for them" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/example/CircularLinkedListTest.java</url>
-          <line>179</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="added reverse and extend methods and tests for them" />
+    <MESSAGE value="fixed problem with ci and test" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed problem with ci and test" />
   </component>
 </project>
