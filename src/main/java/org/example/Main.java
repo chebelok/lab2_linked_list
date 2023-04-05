@@ -2,7 +2,8 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        CircularLinkedList linkedList = new CircularLinkedList();
+        CircularLinkedList linkedList;
+        linkedList = new CircularLinkedList();
         linkedList.append('a');
         linkedList.append('b');
         linkedList.append('c');
