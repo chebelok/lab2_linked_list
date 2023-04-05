@@ -10,7 +10,8 @@
 Друга реалізація списку - список на базі вбудованих масивів/списків
 
 ## Перевірка проекту на працездатність
-Встановіть Java Development Kit (JDK) та Apache Maven 
+Встановіть Java Development Kit (JDK) та Apache Maven
+(Або можете встановити IntelliJ IDEA)
 Зклонуйте репозиторій.
 ```cmd
 https://github.com/chebelok/lab2_linked_list.git

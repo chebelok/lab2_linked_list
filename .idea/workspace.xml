@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="008a7b66-c82e-41af-a9d5-1ccf7bec91fb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CircularLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CircularLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +159,7 @@
       <workItem from="1679694194537" duration="27000" />
       <workItem from="1679694316795" duration="374000" />
       <workItem from="1679694720033" duration="913000" />
-      <workItem from="1679695658513" duration="64435000" />
+      <workItem from="1679695658513" duration="65125000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1679410089979</created>
@@ -246,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680641468805</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added readme">
+      <created>1680644699164</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680644699164</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +282,7 @@
     <MESSAGE value="fixed problem with ci and test" />
     <MESSAGE value="added second realisation for linked list" />
     <MESSAGE value="fixed error with test" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed error with test" />
+    <MESSAGE value="added readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="added readme" />
   </component>
 </project>
