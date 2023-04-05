@@ -16,10 +16,10 @@
 ```cmd
 https://github.com/chebelok/lab2_linked_list.git
  ```
-Щоб запустити проект треба перейти в папку src та скомпілювати main файл
+Щоб запустити проект треба перейти в папку src та скомпілювати усі файл
 ```cmd
 cd lab2_linked_list/src/main/java/org/example
-javac Main.java
+javac Main.java CircularLinkedList.java CharList.java
  ```
 Для запуску треба прописати
 ```cmd
